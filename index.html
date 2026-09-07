@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rmundo 3D - Impressão 3D & Soluções Úteis no Mercado Livre</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#00B3FF', // Azul da sua logo
+            brandYellow: '#EBFE00', // Amarelo vibrante da sua logo
+            mlGrayBg: '#EBEBEB',   // Fundo cinza do Mercado Livre
+            mlGreen: '#00a650',    // Verde oficial de Frete Grátis/Descontos
+            mlBlueText: '#3483fa'  // Azul de links/ações do ML
+          },
+          fontFamily: {
+            logo: ['"Chakra Petch"', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-mlGrayBg text-gray-800 font-sans antialiased">
+
+  <!-- CABEÇALHO TIPO MERCADO LIVRE COM SUA IDENTIDADE -->
+  <header class="bg-brandBlue shadow-sm border-b border-black/10 text-gray-900 pb-2 pt-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <!-- LINHA SUPERIOR: LOGO, BUSCA E BENEFÍCIOS -->
+      <div class="flex items-center justify-between gap-4">
+        
+        <!-- LOGO RMUNDO 3D -->
+        <a href="#" class="flex-shrink-0">
+          <img src="imagens/logo.png" alt="Rmundo 3D" class="h-10 sm:h-12 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="hidden bg-brandBlue text-brandYellow font-logo font-black text-2xl sm:text-3xl tracking-wider uppercase px-3 py-1 rounded border-2 border-brandYellow shadow-sm">
+            Rmundo 3D
+          </div>
+        </a>
+
+        <!-- BARRA DE BUSCA -->
+        <div class="flex-grow max-w-2xl hidden md:block">
+          <div class="relative flex items-center">
+            <input type="text" placeholder="Buscar produtos no Rmundo 3D..." class="w-full bg-white text-gray-800 text-sm py-2.5 px-4 pr-10 rounded-sm shadow-sm border-0 focus:outline-none focus:ring-2 focus:ring-black/20">
+            <button class="absolute right-0 top-0 bottom-0 px-3 text-gray-500 hover:text-black flex items-center border-l border-gray-200">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LINHA INFERIOR DO HEADER -->
+      <div class="flex items-center justify-between text-xs sm:text-sm pt-3 font-medium text-gray-900">
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-1 cursor-pointer hover:opacity-80">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            Enviar para todo o Brasil
+          </span>
+          <nav class="hidden sm:flex gap-4">
+            <a href="#produtos" class="hover:underline">Categorias</a>
+            <a href="#produtos" class="hover:underline">Ofertas do dia</a>
+            <a href="#produtos" class="hover:underline">Mais vendidos</a>
+          </nav>
+        </div>
+        <div class="flex gap-4">
+          <span class="font-bold bg-brandYellow text-black px-2 py-0.5 rounded text-xs">Compra Garantida ML</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER PRINCIPAL -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-4">
+    <div class="relative overflow-hidden bg-gradient-to-r from-gray-900 to-brandDark text-white rounded-lg p-6 sm:p-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 border-l-8 border-brandYellow">
+      <img src="imagens/banner.jpg" alt="Banner Rmundo 3D" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove();">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10">
+        <span class="bg-brandYellow text-black font-black text-xs px-2.5 py-1 rounded uppercase tracking-wider">
+          Impressão 3D de Alta Precisão
+        </span>
+        <h1 class="text-2xl sm:text-4xl font-extrabold mt-2 tracking-tight">
+          Produtos Úteis & Organizadores Únicos
+        </h1>
+        <p class="text-gray-300 text-sm sm:text-base mt-2 max-w-xl">
+          Compre com segurança através da nossa vitrine no Mercado Livre com entrega rápida e garantia de devolução.
+        </p>
+      </div>
+      <a href="#produtos" class="relative z-10 bg-brandYellow hover:bg-yellow-300 text-black font-black px-6 py-3 rounded-md transition-colors shadow-md text-sm whitespace-nowrap">
+        Ver Todos os Anúncios
+      </a>
+    </div>
+  </section>
+
+  <!-- GRID DE PRODUTOS ESTILO MERCADO LIVRE -->
+  <main id="produtos" class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-xl font-bold text-gray-800">Anúncios em Destaque</h2>
+      <span class="text-xs text-gray-500">8 produtos encontrados</span>
+    </div>
+
+    <!-- CARDS DOS PRODUTOS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="product-grid">
+      <!-- Inseridos via JavaScript -->
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-gray-300 mt-12 py-8 text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+      <div class="flex items-center gap-3">
+        <svg class="w-8 h-8 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+        <div>
+          <h4 class="font-bold text-gray-700">Pagamento 100% Seguro</h4>
+          <p>Processado diretamente pelo Mercado Pago.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg class="w-8 h-8 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+        <div>
+          <h4 class="font-bold text-gray-700">Envio Garantido</h4>
+          <p>Receba seu produto impresso em 3D em casa.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg class="w-8 h-8 text-brandBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        <div>
+          <h4 class="font-bold text-gray-700">Garantia Rmundo 3D</h4>
+          <p>Peças resistentes fabricadas com alto padrão.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 text-center border-t border-gray-200 pt-6">
+      <p>© 2026 Rmundo 3D. Todos os direitos reservados. Os botões de compra redirecionam para a plataforma do Mercado Livre.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <!-- IMPORTANTE: troque 5511999999999 pelo seu número real (DDI 55 + DDD + número, sem espaços/traços) -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Rmundo%203D%20e%20quero%20tirar%20uma%20d%C3%BAvida."
+     target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-5 right-5 z-50 bg-[#25D366] hover:bg-[#1ebe5b] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+     aria-label="Falar no WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 32 32">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.738 5.588 2.14 8.03L0 32l8.16-2.114A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.28 13.28 0 01-6.77-1.85l-.485-.288-4.84 1.255 1.29-4.716-.316-.484A13.24 13.24 0 012.667 16C2.667 8.64 8.64 2.667 16 2.667S29.333 8.64 29.333 16 23.36 29.333 16 29.333zm7.28-9.907c-.399-.2-2.36-1.164-2.726-1.297-.365-.133-.63-.2-.897.2-.266.399-1.03 1.297-1.263 1.563-.233.266-.465.3-.864.1-.399-.2-1.684-.62-3.208-1.98-1.186-1.058-1.987-2.366-2.22-2.765-.233-.399-.025-.615.175-.814.18-.179.399-.465.598-.698.2-.233.266-.399.399-.665.133-.266.067-.499-.033-.698-.1-.2-.897-2.162-1.229-2.96-.324-.777-.652-.672-.897-.685-.233-.011-.499-.014-.765-.014-.266 0-.698.1-1.064.499-.365.399-1.396 1.364-1.396 3.326s1.429 3.858 1.628 4.124c.2.266 2.812 4.293 6.813 6.022.952.411 1.695.657 2.274.84.955.304 1.825.261 2.512.158.766-.115 2.36-.964 2.693-1.895.333-.93.333-1.729.233-1.895-.1-.166-.365-.266-.764-.465z"/>
+    </svg>
+  </a>
+
+
+  <!-- SCRIPT DOS PRODUTOS -->
+  <script>
+    const products = [
+      {
+        title: "Suporte Prateleira para Xícaras & Canecas - Impressão 3D",
+        price: "R$ 39,90",
+        image: "imagens/produto1.jpg",
+        mlLink: "https://www.mercadolivre.com.br"
+      },
+      {
+        title: "Dispenser Flutuante Cotonetes Estilo Japandi",
+        price: "R$ 45,00",
+        image: "imagens/produto2.jpg",
+        mlLink: "https://www.mercadolivre.com.br"
+      },
+      {
+        title: "Suporte Paramétrico de Parede para Óculos de Sol",
+        price: "R$ 29,90",
+        image: "imagens/produto3.jpg",
+        mlLink: "https://www.mercadolivre.com.br"
+      },
+      {
+        title: "Limpador Portátil Conector de Celular USB-C / iPhone",
+        price: "R$ 14,90",
+        image: "imagens/produto4.jpg",
+        mlLink: "https://www.mercadolivre.com.br"
+      },
+      {
+        title: "Organizador Multiuso com Alça para Despensa e Geladeira",
+        price: "R$ 52,90",
+        image: "imagens/produto5.jpg",
+        mlLink: "https://www.mercadolivre.com.br"
+      },
+      {
+        title: "Organizador Modular de Mesa Kribu-Krabu 3D",
+        price: "R$ 68,00",
+        image: "imagens/produto6.jpg",
+        mlLink: "https://www.mercadolivre.com.br"
+      },
+      {
+        title: "Suporte Ajustável de Parede para Vassouras e Rodos",
+        price: "R$ 24,90",
+        image: "imagens/produto7.jpg",
+        mlLink: "https://www.mercadolivre.com.br"
+      },
+      {
+        title: "Porta-Lápis Gigante em Formato de Lápis - Decorativo",
+        price: "R$ 49,90",
+        image: "imagens/produto8.jpg",
+        mlLink: "https://www.mercadolivre.com.br"
+      }
+    ];
+
+    const grid = document.getElementById('product-grid');
+
+    grid.innerHTML = products.map(prod => `
+      <div class="bg-white rounded-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow flex flex-col justify-between group">
+        <div>
+          <!-- IMAGEM -->
+          <div class="relative h-48 bg-gray-100 overflow-hidden border-b border-gray-100">
+            <img src="${prod.image}" alt="${prod.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="w-full h-full hidden items-center justify-center text-gray-400 text-xs text-center px-2">
+              Foto do produto<br>(${prod.image})
+            </div>
+            <span class="absolute top-2 left-2 bg-brandYellow text-black text-[10px] font-black px-1.5 py-0.5 rounded uppercase">
+              Rmundo 3D
+            </span>
+          </div>
+
+          <!-- CONTEÚDO DO CARD ESTILO MERCADO LIVRE -->
+          <div class="p-4">
+            <h3 class="text-sm text-gray-800 line-clamp-2 leading-snug group-hover:text-mlBlueText transition-colors mb-2">
+              ${prod.title}
+            </h3>
+
+            <!-- PREÇO -->
+            <div class="mb-2">
+              <div class="text-2xl font-normal text-gray-900 leading-none">
+                ${prod.price}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTÃO DE COMPRAR -->
+        <div class="p-4 pt-0">
+          <a href="${prod.mlLink}" target="_blank" rel="noopener noreferrer" 
+             class="w-full bg-brandYellow hover:bg-yellow-300 text-black font-black text-sm py-2.5 px-3 rounded-md flex items-center justify-center gap-1.5 transition-all shadow-sm active:scale-95 border border-black/10">
+            Comprar no Mercado Livre
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+    `).join('');
+  </script>
+</body>
+</html>
